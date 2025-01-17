@@ -31,6 +31,7 @@ export class TaskComponent implements OnInit{
     this.taskService.createTask(this.newTask).subscribe((createdTask)=>{
 
       this.newTask={description:"",completed:false}//reset task
+      this.tasks.push(createdTask);
     })
   }
   // Subscribes to the backend's response:
@@ -64,6 +65,16 @@ export class TaskComponent implements OnInit{
   cancelEdit(){
     this.editingTask=null;
     this.updatedTask={description:"",completed:false}
+  }
+
+  deleteTask(taskId: number){
+    this.taskService.deleteTask(taskId).subscribe(()=>{
+      this.tasks = this.tasks=this.tasks.filter((task)=>task.id !== taskId)
+
+      if(this.editingTask && this.editingTask.id==taskId){
+        this.cancelEdit();
+      }
+    })
   }
 
 }
