@@ -67,9 +67,10 @@ export class TaskComponent implements OnInit{
     this.updatedTask={description:"",completed:false}
   }
 
-  deleteTask(taskId: number){
+  deleteTask(taskId: any){
+    if(confirm('Are you sure want to delete?'))
     this.taskService.deleteTask(taskId).subscribe(()=>{
-      this.tasks = this.tasks=this.tasks.filter((task)=>task.id !== taskId)
+      this.tasks=this.tasks.filter((task)=>task.id !== taskId)
 
       if(this.editingTask && this.editingTask.id==taskId){
         this.cancelEdit();

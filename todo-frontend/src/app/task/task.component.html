@@ -24,7 +24,9 @@
                                 <p>{{task.description}}</p>
                             </div>
                             <div class="col-6">
-                              <button type="button"  class="btn btn-light" (click)="editTask(task)">Edit</button>
+                              <button type="button"  class="btn btn-light mx-2" (click)="editTask(task)">Edit</button>
+                              <button type="button"  class="btn btn-light" (click)="deleteTask(task.id)">Delete</button>
+                              
                             </div>
                         </div>
                     </li>
