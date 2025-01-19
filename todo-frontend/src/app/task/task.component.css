@@ -1,0 +1,38 @@
+#lists{
+    background-color:burlywood;
+}
+
+#des {
+    font-weight: 600;
+}
+
+#addtaskbtn {
+    background-color: #264587;
+    width: 120px;
+    height: 40px;
+    border-radius: 3.5px;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    font-weight: 450;
+    
+}
+
+#head{
+    font-weight: 700;
+    font-family:monospace;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Darker shadow */
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
+}
