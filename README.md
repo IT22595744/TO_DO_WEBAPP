@@ -45,7 +45,7 @@ TO_DO_WEBAPP/
 └── todo/              # Spring Boot backend
 ```
 
-> Directory names reflect the repository's current root folders. Consult each folder for its full internal structure.
+
 
 ## Getting Started
 
@@ -73,7 +73,7 @@ cd TO_DO_WEBAPP
 3. Update the backend's database configuration (typically `src/main/resources/application.properties` or `application.yml`) with your local database URL, username, and password.
 4. Install backend dependencies and run the Spring Boot application using the build configuration included in the project.
 
-> **Configuration note:** Verify the actual database name, Java version, server port, and build command from the backend source. Do not commit database passwords or other secrets.
+
 
 ### 3. Start the Angular frontend
 
@@ -106,11 +106,8 @@ The application uses REST APIs for core task operations:
 | Update | Modify an existing task |
 | Delete | Remove a task |
 
-> Exact endpoint paths and HTTP methods should be copied from the backend controller source before publishing an API reference. The project previously used `POST /api/tasks` for task creation; verify it against the latest code.
 
 ## Screenshots
-
-Add screenshots to a `screenshots/` directory and replace the placeholders below with links to your actual images.
 
 - **Task list:** Show the main interface with tasks displayed.
 - **Create task:** Show the task creation form.
@@ -131,7 +128,7 @@ Add screenshots to a `screenshots/` directory and replace the placeholders below
 
 ## Potential Improvements
 
-The following are ideas for future development, **not claims about existing functionality**:
+The following are ideas for future development
 
 - Add user authentication and role-based access control
 - Add task priority, deadlines, and status filtering
