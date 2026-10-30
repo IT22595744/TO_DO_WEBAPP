@@ -41,6 +41,7 @@ public class TaskController {
 //    @GetMapping("/api/tasks")
     @GetMapping
     public List<Task> getAllTasks(){
+        
         return taskRepository.findAll();
     }
 
